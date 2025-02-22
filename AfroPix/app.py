@@ -150,18 +150,23 @@ def politics_page():
 
 
 def health_page():
-    change_background_color("#4AE014")
-    st.write("Black Excellence in Health content goes here.")
+    st.write("Black Excellence in Health")
     st.divider()
-    st.write("Dr. Charles Drew & the Blood Bank Revolution (1940s)")
+    st.write("Dr. Charles Drew & the Blood Bank Revolution")
+    st.write("Dr. Charles Drew revolutionized the field of blood transfusion by developing improved techniques for blood storage and the large-scale blood bank system. His work led to the creation of the American Red Cross blood bank, saving countless lives during World War II and beyond. Despite facing racial discrimination, his pioneering research laid the foundation for modern blood donation practices.")
     st.divider()
-    st.write("Dr. Daniel Hale Williams Performs the First Successful Open-Heart Surgery (1893)")
+    st.write("Dr. Daniel Hale Williams Performs the First Successful Open-Heart Surgery")
+    st.write("In 1893, Dr. Daniel Hale Williams became the first surgeon to successfully perform an open-heart surgery. He operated on a man who had been stabbed in the chest, managing to repair the wound without modern surgical tools or antibiotics. Williams later founded Provident Hospital in Chicago, the first Black-owned and operated hospital in the United States, advancing opportunities for Black medical professionals.")
     st.divider()
-    st.write("The Black Panther Party’s Free Health Clinics (1960s–1970s)")
+    st.write("The Black Panther Party's Free Health Clinics")
+    st.write("The Black Panther Party established free community health clinics across the United States in the 1960s and 1970s, providing essential medical services to underserved Black communities. These clinics offered screenings for conditions like sickle cell anemia and provided general healthcare, setting a precedent for grassroots health activism and community care.")
     st.divider()
-    st.write("The Establishment of Meharry Medical College (1876)")
+    st.write("The Establishment of Meharry Medical College")
+    st.write("Founded in 1876, Meharry Medical College in Nashville, Tennessee, became one of the first medical schools dedicated to training Black physicians. The institution played a crucial role in addressing racial disparities in healthcare and continues to produce top-tier medical professionals who serve communities in need.")
     st.divider()
-    st.write("Mary Eliza Mahoney Becomes the First Black Professional Nurse (1879)")
+    st.write("Mary Eliza Mahoney Becomes the First Black Professional Nurse")
+    st.write("In 1879, Mary Eliza Mahoney became the first African American to earn a professional nursing license in the United States. Her achievements broke racial barriers in healthcare, and she later co-founded the National Association of Colored Graduate Nurses, advocating for diversity and equity in the medical field.")
+
     if st.button("Go Back"):
         st.session_state.page = "preferences"
 
