@@ -170,14 +170,19 @@ def sports_page():
     st.write("Black Excellence Intro Message in Sports content goes here.")
     st.divider()
     st.write("Jackie Robinson Breaks the MLB Color Barrier (1947)")
+    st.write("Jackie Robinson made history when he became the first African American to play Major League Baseball with the Brooklyn Dodgers, breaking the league’s long-standing color barrier. Facing intense racism from fans, teammates, and opponents, Robinson remained resilient, letting his talent and discipline speak for itself. His courage changed baseball forever, paving the way for Black athletes in professional sports and accelerating the Civil Rights Movement by challenging segregation in one of America’s most beloved pastimes.")
     st.divider()
     st.write("LeBron James Opens the I PROMISE School (2018)")
+    st.write("LeBron James is not only one of the greatest basketball players of all time, but also a champion for education and social change. In 2018, he opened the I PROMISE School in Akron, Ohio, dedicated to providing free, high-quality education and support to at-risk children. The school offers free tuition, meals, bicycles, and guaranteed college scholarships for qualifying students. LeBron’s initiative extends beyond basketball, proving that athletes can be powerful forces for community upliftment and generational change.")
     st.divider()
     st.write("Kareem Abdul-Jabbar Becomes the NBA’s All-Time Leading Scorer (1984)")
+    st.write("Kareem Abdul-Jabbar, known for his unstoppable skyhook shot, made history in 1984 by surpassing Wilt Chamberlain to become the NBA’s all-time leading scorer, a record that stood for nearly 40 years. Beyond his dominance on the court, Abdul-Jabbar has been a vocal advocate for civil rights, education, and social justice, using his platform to fight for equality. His influence as both an athlete and activist cements his legacy as one of the most important figures in sports history.")
     st.divider()
     st.write("Wilma Rudolph Becomes the First American Woman to Win Three Gold Medals in One Olympics (1960)")
+    st.write("Wilma Rudolph overcame childhood polio, racial barriers, and gender discrimination to become one of the greatest track and field athletes of all time. At the 1960 Rome Olympics, she became the first American woman to win three gold medals in a single Olympic Games, dominating the 100m, 200m, and 4x100m relay. Her achievements made her a global icon, inspiring both women and African Americans to pursue their dreams despite obstacles. She later used her fame to advocate for racial and gender equality in sports and society.")
     st.divider()
     st.write("Muhammad Ali Becomes Heavyweight Champion (1964)")
+    st.write("In 1964, a young and confident Muhammad Ali shocked the world by defeating Sonny Liston to become the youngest heavyweight boxing champion at just 22 years old. Ali’s charisma, bold personality, and unparalleled skill made him a global sensation, but his legacy extended far beyond the ring. A fierce advocate for civil rights, he refused to be drafted into the Vietnam War, famously stating, “I ain’t got no quarrel with them Viet Cong.” His decision cost him his title and nearly ended his career, but he stood firm in his beliefs. Ali’s combination of athletic dominance and social activism made him one of the most influential sports figures in history.")
     if st.button("Go Back"):
         st.session_state.page = "preferences"
 
