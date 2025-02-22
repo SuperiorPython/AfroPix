@@ -7,8 +7,9 @@ col1, col2, col3 = st.columns([1, 2, 1])
 
 def title_stream_data():
     intro_message = """
-    Hello viewer. I see you have decided to partake in soaking in the knowledge of 
-    African-American history and our achievements. Allow us to introduce you to our website.
+    Welcome to Scarab Legacy - where African-American History is reborn, reimagined, and remembered.
+    Scarab Legacy offers innovative options to allow users to increase their knowledege on African-American
+    History. Welcome to Scarab Legacy.
     """
     for word in intro_message.split(" "):
         yield word + " "
