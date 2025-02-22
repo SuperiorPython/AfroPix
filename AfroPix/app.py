@@ -1,13 +1,33 @@
 import streamlit as st
 import time
-from streamlit_timeline import timeline
-import pandas as pd
-
+from PIL import Image
 
 
 col1, col2, col3 = st.columns([1, 2, 1])
 
+def change_background_color(color):
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-color: {color};
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
+def change_divider_color(color):
+    st.markdown(
+        f"""
+        <style>
+        .st-b1 {{ /* This is the class of Streamlit's divider */
+            border-color: {color};
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
 def title_stream_data():
     intro_message = """
@@ -29,22 +49,29 @@ def prefer_stream_data():
         time.sleep(0.1)
 
 def title_page():
+    change_background_color("#E11505")
     with col2:
         if st.button("Hello"):
             st.write_stream(title_stream_data)
             time.sleep(2)
+            image = Image.open("IMG_0727.jpg")
+            st.image(image, use_container_width=True)
             st.title(":orange[Scarab Legacy]")
         time.sleep(2)
         if st.button("Let's Begin"):
             st.session_state.page = "preferences" # Update session state
 
 def preference_page():
+    change_background_color("#E0CD00")
     with col1:
         st.write(prefer_stream_data)
         if st.button("Go Back"):
             st.session_state.page = "title"
-            title_page()
     with col2:
+        image = Image.open("Martin_Luther_King,_Jr..jpg")
+        st.image(image, use_container_width=True)
+    with col3:
+        st.write("Which topic would you like to learn about?")
         if st.button("Black Excellence in STEM"):
             st.session_state.page = "stem"
         if st.button("Black Excellence in Arts"):
@@ -58,6 +85,8 @@ def preference_page():
 
 
 def stem_page():
+    change_divider_color("#000000")
+    change_background_color("#4AE014")
     st.write("Black Excellence in STEM content goes here.")
     st.divider()
     st.write("Granville T. Woods – “The Black Edison\”")
@@ -73,6 +102,7 @@ def stem_page():
         st.session_state.page = "preferences"
 
 def arts_page():
+    change_background_color("#4AE014")
     st.write("Black Excellence in Arts content goes here.")
     st.divider()
     st.write("James Baldwin’s Go Tell It on the Mountain")
@@ -88,6 +118,7 @@ def arts_page():
         st.session_state.page = "preferences"
 
 def politics_page():
+    change_background_color("#4AE014")
     st.write("Black Excellence in Politics content goes here.")
     st.divider()
     st.write("Thurgood Marshall the First Black Supreme Court Justice")
@@ -103,6 +134,7 @@ def politics_page():
         st.session_state.page = "preferences"
 
 def health_page():
+    change_background_color("#4AE014")
     st.write("Black Excellence in Health content goes here.")
     st.divider()
     st.write("Dr. Charles Drew & the Blood Bank Revolution")
@@ -118,6 +150,7 @@ def health_page():
         st.session_state.page = "preferences"
 
 def sports_page():
+    change_background_color("#4AE014")
     st.write("Black Excellence Intro Message in Sports content goes here.")
     st.divider()
     st.write("Jackie Robinson Breaks the MLB Color Barrier")
