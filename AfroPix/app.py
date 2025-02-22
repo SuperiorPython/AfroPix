@@ -60,45 +60,45 @@ def preference_page():
 def stem_page():
     st.write("Black Excellence in STEM content goes here.")
     st.divider()
-    st.write("Event 1")
+    st.write("Granville T. Woods – “The Black Edison\”")
     st.divider()
-    st.write("Event 2")
+    st.write("Marie Van Brittan Brown – Inventor of the Home Security System")
     st.divider()
-    st.write("Event 3")
+    st.write("Dr. Shirley Ann Jackson – First Black Woman to Earn a Ph.D. from MIT in Physics")
     st.divider()
-    st.write("Event 4")
+    st.write("First Black Astronaut in Space – Guion Bluford")
     st.divider()
-    st.write("Event 5")
+    st.write("Lonnie Johnson’s Super Soaker Invention")
     if st.button("Go Back"):
         st.session_state.page = "preferences"
 
 def arts_page():
     st.write("Black Excellence in Arts content goes here.")
     st.divider()
-    st.write("Event 1")
+    st.write("James Baldwin’s Go Tell It on the Mountain")
     st.divider()
-    st.write("Event 2")
+    st.write("Spike Lee’s Do the Right Thing")
     st.divider()
-    st.write("Event 3")
+    st.write("Alvin Ailey & the Creation of the Alvin Ailey American Dance Theater")
     st.divider()
-    st.write("Event 4")
+    st.write("Jean-Michel Basquiat’s Rise in Contemporary Art")
     st.divider()
-    st.write("Event 5")
+    st.write("Lorraine Hansberry’s A Raisin in the Sun")
     if st.button("Go Back"):
         st.session_state.page = "preferences"
 
 def politics_page():
     st.write("Black Excellence in Politics content goes here.")
     st.divider()
-    st.write("Event 1")
+    st.write("Thurgood Marshall the First Black Supreme Court Justice")
     st.divider()
-    st.write("Event 2")
+    st.write("The Founding of the Congressional Black Caucus")
     st.divider()
-    st.write("Event 3")
+    st.write("Carol Moseley Braun the First Black Woman in the U.S. Sena")
     st.divider()
-    st.write("Event 4")
+    st.write("John Lewis & the Voting Rights Act")
     st.divider()
-    st.write("Event 5")
+    st.write("Shirley Chisholm Becomes the First Black Woman in Congress")
     if st.button("Go Back"):
         st.session_state.page = "preferences"
 
