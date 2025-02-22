@@ -131,16 +131,23 @@ def politics_page():
     st.write("Black Excellence in Politics content goes here.")
     st.divider()
     st.write("Thurgood Marshall Becomes the First Black Supreme Court Justice (1959)")
+    st.write("Thurgood Marshall made history in 1967 as the first Black Supreme Court Justice, breaking barriers in the highest court of the United States. Before his appointment, Marshall was a trailblazing civil rights lawyer, most famously arguing Brown v. Board of Education (1954), which led to the desegregation of public schools. As a justice, he championed civil rights, racial equality, and justice for marginalized communities, leaving a lasting legacy in American law. His influence continues to shape the fight for equal rights today.")
     st.divider()
     st.write("The Founding of the Congressional Black Caucus (1971)")
+    st.write("The Congressional Black Caucus (CBC) was founded in 1971 to amplify the voices of African American lawmakers and advocate for policies addressing racial and social justice. Formed by 13 Black members of Congress, the CBC sought to combat discrimination, push for civil rights legislation, and ensure Black communities had representation at the highest levels of government. Over the decades, the CBC has played a critical role in shaping policies on voting rights, education, healthcare, and criminal justice reform, solidifying its legacy as a powerful force for equity and progress in American politics.")
     st.divider()
     st.write("Carol Moseley Braun the First Black Woman in the U.S. Sena (1983)")
+    st.write("Carol Moseley Braun made history in 1992 as the first Black woman elected to the U.S. Senate, breaking barriers in a space long dominated by white men. Representing Illinois, she was also the first African American senator from the Democratic Party. During her tenure, she advocated for civil rights, education reform, and women’s rights, while fighting against discrimination and racial injustice. Her election marked a major milestone in American politics, paving the way for more Black women in leadership roles at the national level.")
     st.divider()
     st.write("John Lewis & the Voting Rights Act (1965)")
+    st.write("John Lewis was a key leader in the fight for voting rights, playing a crucial role in the passage of the Voting Rights Act of 1965. As chairman of the Student Nonviolent Coordinating Committee (SNCC), Lewis organized and participated in protests demanding equal voting rights for Black Americans. He was one of the leaders of the Selma to Montgomery march on Bloody Sunday, where he and other activists were brutally attacked by police while crossing the Edmund Pettus Bridge. The violent response to the peaceful protest shocked the nation and pushed Congress to pass the Voting Rights Act, which outlawed racial discrimination in voting. Lewis continued his lifelong fight for justice as a congressman, leaving behind a legacy of courage and activism.")
     st.divider()
     st.write("Shirley Chisholm Becomes the First Black Woman in Congress (1968)")
+    st.write("Shirley Chisholm made history in 1968 as the first Black woman elected to the U.S. Congress, representing New York’s 12th congressional district. A fearless advocate for racial and gender equality, she broke barriers in a political system that often excluded Black women. Chisholm championed policies supporting education, healthcare, and workers’ rights, earning her the nickname “Fighting Shirley.” In 1972, she took her trailblazing efforts even further by becoming the first Black woman to run for President of the United States, paving the way for future generations of Black women in politics.")
     if st.button("Go Back"):
         st.session_state.page = "preferences"
+
+
 
 def health_page():
     change_background_color("#4AE014")
