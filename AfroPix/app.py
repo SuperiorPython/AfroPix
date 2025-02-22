@@ -1,5 +1,9 @@
 import streamlit as st
 import time
+from streamlit_timeline import timeline
+import pandas as pd
+
+
 
 col1, col2, col3 = st.columns([1, 2, 1])
 
@@ -35,11 +39,99 @@ def title_page():
             st.session_state.page = "preferences" # Update session state
 
 def preference_page():
-    with col2:
+    with col1:
         st.write(prefer_stream_data)
+        if st.button("Go Back"):
+            st.session_state.page = "title"
+            title_page()
+    with col2:
+        if st.button("Black Excellence in STEM"):
+            st.session_state.page = "stem"
+        if st.button("Black Excellence in Arts"):
+            st.session_state.page = "arts"
+        if st.button("Black Excellence in Politics"):
+            st.session_state.page = "politics"
+        if st.button("Black Excellence in Health"):
+            st.session_state.page = "health"
+        if st.button("Black Excellence in Sports"):
+            st.session_state.page = "sports"
+
+
+def stem_page():
+    st.write("Black Excellence in STEM content goes here.")
+    st.divider()
+    st.write("Event 1")
+    st.divider()
+    st.write("Event 2")
+    st.divider()
+    st.write("Event 3")
+    st.divider()
+    st.write("Event 4")
+    st.divider()
+    st.write("Event 5")
     if st.button("Go Back"):
-        st.session_state.page = "title"
-        title_page()
+        st.session_state.page = "preferences"
+
+def arts_page():
+    st.write("Black Excellence in Arts content goes here.")
+    st.divider()
+    st.write("Event 1")
+    st.divider()
+    st.write("Event 2")
+    st.divider()
+    st.write("Event 3")
+    st.divider()
+    st.write("Event 4")
+    st.divider()
+    st.write("Event 5")
+    if st.button("Go Back"):
+        st.session_state.page = "preferences"
+
+def politics_page():
+    st.write("Black Excellence in Politics content goes here.")
+    st.divider()
+    st.write("Event 1")
+    st.divider()
+    st.write("Event 2")
+    st.divider()
+    st.write("Event 3")
+    st.divider()
+    st.write("Event 4")
+    st.divider()
+    st.write("Event 5")
+    if st.button("Go Back"):
+        st.session_state.page = "preferences"
+
+def health_page():
+    st.write("Black Excellence in Health content goes here.")
+    st.divider()
+    st.write("Event 1")
+    st.divider()
+    st.write("Event 2")
+    st.divider()
+    st.write("Event 3")
+    st.divider()
+    st.write("Event 4")
+    st.divider()
+    st.write("Event 5")
+    if st.button("Go Back"):
+        st.session_state.page = "preferences"
+
+def sports_page():
+    st.write("Black Excellence Intro Message in Sports content goes here.")
+    st.divider()
+    st.write("Event 1")
+    st.divider()
+    st.write("Event 2")
+    st.divider()
+    st.write("Event 3")
+    st.divider()
+    st.write("Event 4")
+    st.divider()
+    st.write("Event 5")
+    if st.button("Go Back"):
+        st.session_state.page = "preferences"
+
 
 # Initialize session state
 if 'page' not in st.session_state:
@@ -50,3 +142,13 @@ if st.session_state.page == "title":
     title_page()
 elif st.session_state.page == "preferences":
     preference_page()
+elif st.session_state.page == "stem":
+    stem_page()
+elif st.session_state.page == "arts":
+    arts_page()
+elif st.session_state.page == "politics":
+    politics_page()
+elif st.session_state.page == "health":
+    health_page()
+elif st.session_state.page == "sports":
+    sports_page()
