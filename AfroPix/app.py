@@ -17,8 +17,8 @@ def title_stream_data():
 
 def prefer_stream_data():
     prefer_message = """
-        We are glad you have decided to learn about our achievements, you have 
-        the option of choosing between multiple topics concerning African American Achievements
+        We're estactic you want to celebrate the vast remarkable acheivements of African-American History,
+        we have an expansize selection that you can choose from pertaining to acheivements in African-American History.
         """
     for word in prefer_message.split(" "):
         yield word + " "
