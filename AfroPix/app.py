@@ -105,30 +105,30 @@ def politics_page():
 def health_page():
     st.write("Black Excellence in Health content goes here.")
     st.divider()
-    st.write("Event 1")
+    st.write("Dr. Charles Drew & the Blood Bank Revolution")
     st.divider()
-    st.write("Event 2")
+    st.write("Dr. Daniel Hale Williams Performs the First Successful Open-Heart Surgery")
     st.divider()
-    st.write("Event 3")
+    st.write("The Black Panther Party’s Free Health Clinics")
     st.divider()
-    st.write("Event 4")
+    st.write("The Establishment of Meharry Medical College")
     st.divider()
-    st.write("Event 5")
+    st.write("Mary Eliza Mahoney Becomes the First Black Professional Nurse")
     if st.button("Go Back"):
         st.session_state.page = "preferences"
 
 def sports_page():
     st.write("Black Excellence Intro Message in Sports content goes here.")
     st.divider()
-    st.write("Event 1")
+    st.write("Jackie Robinson Breaks the MLB Color Barrier")
     st.divider()
-    st.write("Event 2")
+    st.write("LeBron James Opens the I PROMISE School")
     st.divider()
-    st.write("Event 3")
+    st.write("Kareem Abdul-Jabbar Becomes the NBA’s All-Time Leading Scorer")
     st.divider()
-    st.write("Event 4")
+    st.write("Wilma Rudolph Becomes the First American Woman to Win Three Gold Medals in One Olympics")
     st.divider()
-    st.write("Event 5")
+    st.write("Muhammad Ali Becomes Heavyweight Champion")
     if st.button("Go Back"):
         st.session_state.page = "preferences"
 
