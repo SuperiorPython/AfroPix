@@ -106,18 +106,23 @@ def stem_page():
         st.session_state.page = "preferences"
 
 def arts_page():
-    change_background_color("#4AE014")
-    st.write("Black Excellence in Arts content goes here.")
+    st.write("Black Excellence in Arts")
     st.divider()
-    st.write("James Baldwin’s Go Tell It on the Mountain (1953)")
+    st.write("James Baldwin's *Go Tell It on the Mountain*")
+    st.write("Published in 1953, *Go Tell It on the Mountain* is a semi-autobiographical novel by James Baldwin that explores themes of race, religion, and identity. The book follows a young Black boy growing up in Harlem, grappling with faith and family struggles. Baldwin's literary contributions continue to shape discussions on race and justice in America.")
     st.divider()
-    st.write("Spike Lee’s Do the Right Thing (1989)")
+    st.write("Spike Lee's *Do the Right Thing*")
+    st.write("Released in 1989, *Do the Right Thing* is a film directed by Spike Lee that examines racial tensions in a Brooklyn neighborhood on the hottest day of the year. The film carries powerful social commentary and distinctive cinematography have cemented it as one of the most influential films in American cinema history.")
     st.divider()
-    st.write("Alvin Ailey & the Creation of the Alvin Ailey American Dance Theater (1958)")
+    st.write("Alvin Ailey & the Creation of the Alvin Ailey American Dance Theater")
+    st.write("Alvin Ailey, a visionary choreographer, founded the Alvin Ailey American Dance Theater in 1958 to celebrate African American culture through dance. His most famous work, *Revelations*, is a masterpiece that blends modern dance with African American spirituals, gospel, and blues, continuing to inspire dancers worldwide.")
     st.divider()
-    st.write("Jean-Michel Basquiat’s Rise in Contemporary Art (1980s)")
+    st.write("Jean-Michel Basquiat's Rise in Contemporary Art")
+    st.write("Jean-Michel Basquiat, an artist who emerged from the 1980s New York graffiti scene, became one of the most celebrated contemporary artists. His neo-expressionist paintings, filled with bold imagery and social critique, addressed themes of race, power, and identity, leaving a lasting impact on the art world.")
     st.divider()
-    st.write("Lorraine Hansberry’s A Raisin in the Sun (1959)")
+    st.write("Lorraine Hansberry's *A Raisin in the Sun*")
+    st.write("In 1959, Lorraine Hansberry made history as the first Black woman to have a play performed on Broadway with *A Raisin in the Sun*. The play tells the story of a Black family in Chicago struggling with poverty and discrimination, tackling themes of dreams, racial identity, and perseverance. It remains a classic in American theater.")
+    
     if st.button("Go Back"):
         st.session_state.page = "preferences"
 
